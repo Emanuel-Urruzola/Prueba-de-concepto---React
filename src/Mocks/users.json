@@ -1,0 +1,23 @@
+[
+  {
+    "user": "usuario1",
+    "address": "calle 1",
+    "email": "email1@gmail.com",
+    "phone": 123456789,
+    "pass": "1234"
+  },
+  {
+    "user": "usuario2",
+    "address": "calle 2",
+    "email": "email2@gmail.com",
+    "phone": 987654321,
+    "pass": "5678"
+  },
+  {
+    "user": "usuario3",
+    "address": "calle 3",
+    "email": "email3@gmail.com",
+    "phone": 234567890,
+    "pass": "9101"
+  }
+]
