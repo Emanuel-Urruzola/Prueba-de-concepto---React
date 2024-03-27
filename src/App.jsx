@@ -37,22 +37,19 @@ function App () {
     mockUsers.push(user)
   }
 
-  const updateUser = (user) => {
-    const index = mockUsers.findIndex((u) => u.user === user.user)
-    mockUsers[index] = user
-  }
+  const logout = () => setUser('')
 
   return (
     <>
       <BrowserRouter>
-        <NavBar user={user} />
+        <NavBar user={user} logout={logout} />
         <div className='card'>
           <Routes>
             {user
               ? <Route path='/login' element={<Navigate to='/home' />} />
               : <Route path='/home' element={<Navigate to='/login' />} />}
             <Route path='/login' element={<Login handleLogin={handleLogin} error={error} />} />
-            <Route path='/register' element={<Register />} />
+            <Route path='/register' element={<Register addUser={addUser} />} />
             <Route path='/home' element={<Home />} />
           </Routes>
         </div>
