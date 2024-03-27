@@ -1,0 +1,15 @@
+footer{
+  background-color: #222;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 1rem;
+  color: white;
+}
+.repositorio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
